@@ -1,0 +1,135 @@
+/*************Start main navigation*************/
+.main-nav {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: transparent;
+	transition: all ease 0.4s;
+}
+.main-nav .logo {
+	display: block;
+	float: left;
+}
+.main-nav .logo-img {
+	max-width: 174px;
+	padding: 6px 0 0 0;
+	transition: all ease 0.4s;	
+}
+.main-nav ul {
+	float: right;
+    margin-right: -7px;
+}
+.main-nav ul li {
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.main-nav ul li a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 32.5px 7px;
+    display: block;
+    transition: all ease 0.4s;
+}
+.main-nav ul li a:hover {
+	color: #00A49E;
+}
+/*************Mobile Header*************/
+.mobile-header {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #212121;
+	height: 58px;
+}
+.mobile-header .sm-logo {
+	display: inline-block;
+	max-width: 115px;
+	margin-top: 5px;
+	float: left;
+}
+/*************Hamburger*************/
+.hamburger {
+    position: absolute;
+    display: block;
+    right: 0;
+    width: 26px;
+    height: 23px;
+    margin: 20px 28px 0 0;
+    cursor: pointer;
+}
+.hamburger span {
+	display: block;
+	background: #fff;
+	height: 2px;
+	margin-top: 8px;
+
+	transition:background linear 200ms;
+}
+.hamburger span:before,
+.hamburger span:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #fff;
+	width: 26px;
+	height: 2px;
+	
+	transition: all linear 200ms;
+}
+.hamburger span:after { margin-top: 16px; }
+.open.hamburger span:before {
+	top: 9px;
+}
+.open.hamburger span:after {
+ 	top: -9px;
+}
+/*************STICKY*************/
+.main-nav.sticky {
+	background-color: #383838;
+}
+.main-nav ul li a.sticky {
+    padding: 24.5px 7px;
+}
+.main-nav .logo-img.sticky {max-width: 143px;}
+/********************************************************/
+/*******************MEDIA QUERIES************************/
+/********************************************************/
+@media only screen and (max-width: 768px) {
+	.mobile-header{display: block;}
+	.main-nav .container {padding: 0;}
+	.main-nav {
+		top: 58px;
+		background-color: #383838;
+	}
+	.main-nav .logo {
+		display: none;
+	}
+	.main-nav ul {
+		display: none;
+		width: 100%;
+		float: none; 
+	}
+	.main-nav ul li {
+		display: block;
+		line-height: 2.4em;
+		border-top: 1px solid #585858;
+	}
+	.main-nav ul li:last-child {
+		border-bottom: 1px solid #585858;
+	}
+	.main-nav ul li a {
+		display: block;
+		padding: 3px 20px;
+	}
+	.main-nav ul li a.sticky {
+	    padding: 3px 20px;
+	}
+}

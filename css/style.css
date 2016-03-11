@@ -1,0 +1,178 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42222222;
+    overflow-x: hidden;
+}
+/************Normalize************/
+a {
+    text-decoration: none;
+    color: #3C3C3C;
+    -webkit-transition: all linear 400ms;
+    -moz-transition: all linear 400ms;
+    -o-transition: all linear 400ms;
+    transition: all linear 400ms;
+}
+section {
+    padding: 50px 0;
+    overflow: hidden;
+}
+section.sectwo {
+    padding: 50px 0 !important;
+    overflow: hidden;
+    background-color: #E6E6E6;
+    border-top: 3px solid #CACACA;
+    border-bottom: 3px solid #CACACA;
+}
+.section-padding0 {
+    padding: 0 !important
+}
+/************Button Style************/
+.btn-sold {
+    display: inline-block;
+    outline: none;
+    background-color: #00A49E;
+    font-weight: 600;
+    padding: 7px 10px;
+    border: 2.5px solid transparent;
+    font-size: 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+.btn-sold:hover {
+    border: 2.5px solid #00A49E;
+    background-color: transparent;
+}
+.no-hover-sold:hover {
+    border: 2.5px solid transparent !important;
+    background-color: #00A49E !important;
+}
+.btn-line {
+    display: inline-block;
+    outline: none;
+    background-color: transparent;
+    border: 2.5px solid #00A49E;
+    font-weight: 600;
+    padding: 8px 12px;
+    font-size: 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+.btn-line:hover {
+    background-color: #00A49E;
+    color: #ffffff !important;
+}
+.no-hover-line:hover {
+    background-color: transparent;
+    color: #00A49E !important;
+}
+.btn-blue {
+    color: #00A49E !important;
+}
+.btn-default {
+    color: #ffffff !important;
+}
+/************End of Button Style************/
+
+/*************Global css************/
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.container {
+    max-width: 1030px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+/*************End of Global css************/
+
+/*************Slider Section*************/
+.caption-slider {
+    position: absolute;
+    z-index: 999;
+    top: 35%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    zoom: 1;
+    padding: 0 20px;
+}
+.caption-slider h4 {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 600;
+    color: #ffffff;
+}
+.caption-slider p {
+    font-size: 2em;
+    line-height: 2.3em;
+    color: #ffffff;
+}
+/*************End Slider Section*************/
+.copyright {
+    text-align: center;
+    padding: 11px 0;
+    font-size: 11px;
+    background-color: #313131;
+    color: #B7B7B7;
+}
+.copyright a {
+    color: #ffffff;
+}
+
+/*******************************************/
+.bounce {
+    padding: 20px;
+    margin: 50px 0;
+    color: #fff;
+    font-size: 15px;
+    text-align: justify;
+    background-color: #ADADAD;
+}
+
+/********************************************************/
+/*******************MEDIA QUERIES************************/
+/********************************************************/
+@media only screen and (max-width: 991px) {
+    .caption-slider {
+        top: 33%;
+    }
+    .caption-slider h4 {
+        font-size: 2.5em;
+    }
+    .caption-slider p {
+        font-size: 1.5em;
+        line-height: 2.2em;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .caption-slider h4 {
+        font-size: 2em;
+    }
+    .caption-slider p {
+        font-size: 1.2em;
+    }
+    .flexslider .slides img {
+        width: 750px;
+    }
+    .flex-direction-nav  {
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 420px) {
+    .caption-slider {
+        top: 28%;
+    }
+}
