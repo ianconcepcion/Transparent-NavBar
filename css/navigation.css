@@ -6,7 +6,6 @@
 	left: 0;
 	width: 100%;
 	background-color: transparent;
-	transition: all ease 0.4s;
 }
 .main-nav .logo {
 	display: block;
@@ -14,8 +13,7 @@
 }
 .main-nav .logo-img {
 	max-width: 174px;
-	padding: 6px 0 0 0;
-	transition: all ease 0.4s;	
+	padding: 6px 0 0 0;	
 }
 .main-nav ul {
 	float: right;
@@ -27,12 +25,11 @@
 	text-transform: uppercase;
 }
 .main-nav ul li a {
-    color: #fff;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 32.5px 7px;
-    display: block;
-    transition: all ease 0.4s;
+	color: #fff;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 32.5px 7px;
+	display: block;
 }
 .main-nav ul li a:hover {
 	color: #00A49E;
@@ -56,21 +53,19 @@
 }
 /*************Hamburger*************/
 .hamburger {
-    position: absolute;
-    display: block;
-    right: 0;
-    width: 26px;
-    height: 23px;
-    margin: 20px 28px 0 0;
-    cursor: pointer;
+	position: absolute;
+	display: block;
+	right: 0;
+	width: 26px;
+	height: 23px;
+	margin: 20px 28px 0 0;
+	cursor: pointer;
 }
 .hamburger span {
 	display: block;
 	background: #fff;
 	height: 2px;
 	margin-top: 8px;
-
-	transition:background linear 200ms;
 }
 .hamburger span:before,
 .hamburger span:after {
@@ -82,6 +77,9 @@
 	width: 26px;
 	height: 2px;
 	
+	-webkit-transition: all linear 200ms;
+	-moz-transition: all linear 200ms;
+	-o-transition: all linear 200ms;
 	transition: all linear 200ms;
 }
 .hamburger span:after { margin-top: 16px; }
@@ -91,14 +89,25 @@
 .open.hamburger span:after {
  	top: -9px;
 }
+/*************STRANSITION EFFECT FOR STICKY*************/
+.main-nav,
+.main-nav ul li a,
+.main-nav .logo-img {
+	-webkit-transition: all ease 0.4s;
+	-moz-transition: all ease 0.4s;
+	-o-transition: all ease 0.4s;
+	transition: all ease 0.4s;
+}
 /*************STICKY*************/
 .main-nav.sticky {
 	background-color: #383838;
 }
 .main-nav ul li a.sticky {
-    padding: 24.5px 7px;
+	padding: 24.5px 7px;
 }
-.main-nav .logo-img.sticky {max-width: 143px;}
+.main-nav .logo-img.sticky {
+	max-width: 143px;
+}
 /********************************************************/
 /*******************MEDIA QUERIES************************/
 /********************************************************/
@@ -130,6 +139,6 @@
 		padding: 3px 20px;
 	}
 	.main-nav ul li a.sticky {
-	    padding: 3px 20px;
+		padding: 3px 20px;
 	}
 }

@@ -19,10 +19,11 @@ $(document).ready(function() {
 
 });
 
+
 $(window).scroll(function() {
     if ($(this).scrollTop() > 1) {
         $('.main-nav, .main-nav ul li a, .main-nav .logo-img').addClass('sticky');
-    } else{
+    } else {
         $('.main-nav, .main-nav ul li a, .main-nav .logo-img').removeClass('sticky');
     };
 });
